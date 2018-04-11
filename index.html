@@ -1,0 +1,252 @@
+<!doctype HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>EvgKtv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="visually-hidden">Календарь</h1>
+
+  <div class="header__content wrapper">
+    <div class="header__content-left">
+      <button type="button" class="header__btn header__btn--add">Добавить</button>
+      <button type="button" class="header__btn header__btn--refresh">Обновить</button>
+    </div>
+    <div class="header__content-right">
+      <svg class="header__search-icon" width="17.6" height="17.6" version="1.1" id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
+<g id="search_1_">
+	<g>
+		<path d="M32.5,30c2.494-3.129,4-7.654,4-12c0-10.05-8.139-18-18-18c-9.862,0-18,7.95-18,18c0,10.05,8.138,18,18,18
+			c4.193,0,7.953-1.534,11-4l11,12l3-3L32.5,30z M18.5,32c-7.658,0-14-6.196-14-14c0-7.804,6.342-14,14-14c7.658,0,14,6.196,14,14
+			C32.5,25.804,26.158,32,18.5,32z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+      </svg>
+      <input class="header__search-box" type="text" name="search" placeholder="Событие, дата или частник">
+    </div>
+  </div>
+
+</header>
+
+<main>
+  <section class="calendar wrapper">
+
+    <div class="calendar__header">
+      <button type="button" class="calendar__btn calendar__btn--prev">prev</button>
+      <span class="months"></span>
+      <span class="year"></span>
+
+      <button type="button" class="calendar__btn calendar__btn--next">next</button>
+
+      <button type="button" class="calendar__btn calendar__btn--today">Сегодня</button>
+    </div>
+
+    <table class="calendar__table">
+      <tr>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Понедельник, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Вторник, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Среда, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Четверг, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Пятница, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Суббота, </span>
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__week-day">Воскресенье, </span>
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="calendar__box calendar__box--event">
+          <span class="calendar__day"></span>
+          <div class="calendar__note">
+            <span class="calendar__note-time">10:30</span>
+            <span class="calendar__note-event">Встреча</span>
+            <span class="calendar__note-person">Иван Иванов</span>
+          </div>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+          <div class="calendar__note">
+            <span class="calendar__note-time"></span>
+            <span class="calendar__note-event"></span>
+            <span class="calendar__note-person"></span>
+          </div>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+        <td class="calendar__box">
+          <span class="calendar__day"></span>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+</main>
+
+<section class="note">
+  <div class="note__wrapper">
+    <div class="note__header">
+      <h1 class="note__title">Заметка на день</h1>
+      <div class="note__date-box">
+        <h3 class="note__form-title note__form-title--date">Выбранная дата:</h3>
+        <span class="note__day"></span>
+        <span class="note__months"></span>
+        <span class="note__year"></span>
+      </div>
+    </div>
+
+    <form class="note__form" method="post" action="#">
+      <div class="note__form-box">
+        <h3 class="note__form-title">Укажите время:</h3>
+        <input class="note__form-box note__form-time" type="time" name="time">
+      </div>
+
+      <div class="note__form-box">
+        <h3 class="note__form-title">Событие:</h3>
+        <textarea class="note__form-box note__form-txt-area note__form-txt-area--event" name="event" placeholder="Описание события" rows="4"></textarea>
+      </div>
+
+      <div class="note__form-box">
+        <h3 class="note__form-title">Событие с кем?</h3>
+        <textarea class="note__form-box note__form-txt-area" name="person" placeholder="Участник" rows="2"></textarea>
+      </div>
+
+      <div class="note__form-box-buttons">
+        <button class="note__form-btn note__form-btn--save btn" type="button">Сохранить</button>
+        <button class="note__form-btn note__form-btn--close btn" type="button">Закрыть</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="overlay"></div>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

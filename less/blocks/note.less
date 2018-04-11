@@ -1,0 +1,95 @@
+@keyframes popup-note {
+  0% {
+    transform: translateY(-1000px);
+  }
+  60% {
+    transform: translateY(70px);
+  }
+  90% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.note {
+  display: none;
+  padding: 30px;
+  position: fixed;
+  width: 540px;
+  height: 540px;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -300px;
+  z-index: 10;
+
+  background-color: #eeeeee;
+  box-shadow: 0 5px 9px #000;
+}
+
+.note__show {
+  display: block;
+}
+
+.note__show-animation {
+  animation: popup-note 0.7s;
+}
+
+.note__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #000;
+
+  text-align: center;
+}
+
+.note__date-box {
+  margin-bottom: 25px;
+
+  text-align: right;
+
+  & span {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+  }
+}
+
+.note__form-box {
+  margin-bottom: 25px;
+
+}
+
+.note__form-title {
+  margin: 0;
+  margin-right: 15px;
+  width: 180px;
+  display: inline-block;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+
+  vertical-align: top;
+}
+
+.note__form-txt-area {
+  padding: 5px;
+
+  resize: none;
+}
+
+.note__form-box-buttons {
+  text-align: center;
+}

@@ -1,0 +1,141 @@
+.calendar {
+  position: relative;
+}
+
+.calendar__header {
+  margin-bottom: 15px;
+}
+
+.calendar__btn {
+  position: relative;
+  height: 30px;
+
+  &--next {
+    font-size: 0;
+
+    vertical-align: top;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      margin-top: -7px;
+      left: 50%;
+      margin-left: -2px;
+
+      border: 7px solid transparent;
+
+      border-left-color: #000;
+      border-right: 0;
+    }
+  }
+
+  &--prev {
+    font-size: 0;
+
+    vertical-align: top;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      margin-top: -7px;
+      left: 50%;
+      margin-left: -4px;
+
+      border: 7px solid transparent;
+
+      border-right-color: #000;
+      border-left: 0;
+    }
+  }
+
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.calendar__table {
+  border-collapse: collapse;
+}
+
+.calendar__box {
+  padding: 5px;
+  width: 145px;
+  height: 110px;
+
+  cursor: pointer;
+
+  vertical-align: top;
+
+  border: 1px solid @border;
+
+  &--active {
+    background-color: @bg_day_active;
+  }
+
+  &:hover {
+    background-color: @bg_day_hover;
+
+    & .calendar__btn-note {
+      display: block;
+    }
+  }
+
+  &--event {
+    background-color: @bg_day_event;
+  }
+
+  &--last {
+    cursor: default;
+    background-color: @bg_day_last;
+
+    &:hover {
+      background-color: @bg_day_last;
+    }
+  }
+}
+
+.months {
+  display: inline-block;
+  width: 80px;
+
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.year {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.calendar__day,
+.calendar__week-day {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+}
+
+.calendar__note-time,
+.calendar__note-event,
+.calendar__note-person {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000;
+}
